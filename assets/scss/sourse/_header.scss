@@ -103,11 +103,11 @@
     display: flex; 
     position: absolute;
     top: 100%;
-    left: 39.5%;
+    left: 41.5%;
     z-index: 100;
     background-color: $blood;
 
-    opacity: 0;
+    display: none;
 
     .menu__logo {
         font-weight: 400;
@@ -129,18 +129,28 @@
     }
 
     .col_2 {
-        color: $pink;
         font-size: 16px;
         line-height: 2;
 
         padding: 20px 39px 0 39px;
         border-left: 1px solid $rgbWhite;
         border-right: 1px solid $rgbWhite;
+
+        .col__link {
+            color: $pink;
+            text-decoration: none;
+
+            transition: text-decoration .1s linear;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
-.active:hover .drop__menu {
-    opacity: 1;
+.nav__helper:hover .drop__menu {
+    display: flex;
 }
 
 // Меню бургер 
