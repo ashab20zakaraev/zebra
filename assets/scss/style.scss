@@ -1,0 +1,45 @@
+// Переменные
+@import 'sourse/vars';
+
+body {
+    margin: 0;
+
+    font-family: $mainFont;
+    font-weight: 400;
+    color: $white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,
+input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+
+// Импорты
+
+@import 'sourse/container';
+@import 'sourse/header';
+@import 'sourse/intro';
+@import 'sourse/price';
+@import 'sourse/categories';
+@import 'sourse/levis';
+@import 'sourse/footer';

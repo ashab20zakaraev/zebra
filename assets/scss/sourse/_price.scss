@@ -1,0 +1,111 @@
+.price {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.price__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.price__items {
+    width: 100%;
+    max-width: 244px;
+    height: 255px;
+    padding: 17px 0 16px 23px;
+    margin-bottom: 10px;
+    background-color: #58DBD3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    .price__title {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .price__description {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .price__sale {
+        font-size: 49px;
+        color: #12867F;
+    }
+
+    .price__product {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+    }
+
+    &--second {
+        background-color: #E4CE9A;
+
+        .price__product {
+            bottom: 0;
+        }
+    }
+
+    &--third {
+        background-color: #FFA7CE;
+
+        .price__product {
+            bottom: 0;
+        }
+    }
+
+    &--ad {
+        background-color: #F2CA66;
+
+        display: block;
+
+        position: relative;
+
+        .price__proc {
+            font-size: 106px;
+            text-align: center;
+            display: block;
+
+            span {
+                display: block;
+                font-size: 64px;
+                text-transform: uppercase;
+            }
+        }
+
+        .price__helper {
+            width: 142px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+
+            background-color: #fff;
+
+            position: absolute;
+            left: 0;
+            bottom: 13px;
+
+            .subtitle {
+                color: #F2CA66;
+                text-transform: uppercase;
+                padding-left: 14px;
+            }
+        }
+    }
+}
+
+// Адаптив
+@media (max-width: 519px) {
+    .price__inner {
+        width: 100%;
+        max-width: 244px;
+        margin: 0 auto;
+    }
+}
